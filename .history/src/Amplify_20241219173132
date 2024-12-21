@@ -1,0 +1,24 @@
+import Amplify, { Auth } from "aws-amplify";
+
+Amplify.configure({
+  Auth: {
+    identityPoolId: "eu-west-3:9c23e48f-55f1-48bf-8303-acbbac502322",
+    region: "eu-west",
+    userPoolId: "eu-west-3_lbYgofA6y",
+    userPoolWebClientId: "618vi583jn8p96pencm9it3ko",
+  },
+});
+
+// Sign-up
+Auth.signUp({
+  username: email,
+  password: password,
+  attributes: { email }, // You can add other attributes here
+})
+  .then(() => console.log("Sign-up successful"))
+  .catch((err) => console.error("Error signing up:", err));
+
+// Sign-in
+Auth.signIn(email, password)
+  .then((user) => console.log("Sign-in successful:", user))
+  .catch((err) => console.error("Error signing in:", err));

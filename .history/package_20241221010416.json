@@ -1,0 +1,48 @@
+{
+  "name": "co-tune",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@aws-amplify/auth": "^6.8.3",
+    "@aws-amplify/pubsub": "^6.1.38",
+    "@aws-amplify/ui-react": "^6.7.2",
+    "@aws-sdk/client-iot": "^3.716.0",
+    "@aws-sdk/client-iot-data-plane": "^3.716.0",
+    "amazon-cognito-identity-js": "^6.3.12",
+    "aws-amplify": "^6.10.3",
+    "aws-iot-device-sdk": "^2.2.15",
+    "aws-sdk": "^2.1692.0",
+    "buffer": "^6.0.3",
+    "cra-template": "1.2.0",
+    "crypto-js": "^4.2.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-scripts": "5.0.1",
+    "uuid": "^11.0.3",
+    "web-vitals": "^4.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
