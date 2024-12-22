@@ -8,6 +8,7 @@
     "@aws-amplify/ui-react": "^6.7.2",
     "@aws-sdk/client-iot": "^3.716.0",
     "@aws-sdk/client-iot-data-plane": "^3.716.0",
+    "@aws-sdk/credential-providers": "^3.716.0",
     "amazon-cognito-identity-js": "^6.3.12",
     "aws-amplify": "^6.10.3",
     "aws-iot-device-sdk": "^2.2.15",

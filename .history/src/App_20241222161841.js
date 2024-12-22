@@ -112,6 +112,8 @@ function App() {
                 cursor: "pointer",
               }}
             >
+              {" "}
+              <h1>Welcome, {user.username}!</h1>
               Sign Out
             </button>
             {isConnected ? (
@@ -119,7 +121,6 @@ function App() {
             ) : (
               <p>Connecting to AWS IoT...</p>
             )}
-            <h1> {user.username}!</h1>
           </div>
         )}
       </Authenticator>

@@ -22,6 +22,10 @@ function App() {
   useEffect(() => {
     const connectToIoT = async () => {
       try {
+        /*const { accessKeyId, secretAccessKey, sessionToken } = fromCognitoIdentityPool({
+          identityPoolId: "eu-west-3:2f4a1e43-f18c-4639-adb6-5a0a36b1979d",
+          userIdentifier: "user_0",
+        });*/
         const iotClient = new IoTDataPlaneClient({
           region: "eu-west-3",
           credentials: fromCognitoIdentityPool({
@@ -30,7 +34,21 @@ function App() {
           }),
         });
         //console.log("Authenticated User:", accessKeyId);
+        // Get current authenticated user using Amplify Auth
+        //const currentUser = await Auth.currentAuthenticatedUser();
+        //console.log("Authenticated User:", currentUser);
 
+        // Get temporary credentials for AWS IoT
+        //const credentials = await Auth.currentCredentials();
+        //console.log("Temporary Credentials:", credentials);
+
+        //const { accessKeyId, secretAccessKey, sessionToken } = credentials;
+
+        // Create an IoT client instance
+
+        // MQTT parameters
+        //const iotEndpoint = "a3c1jrwyyxkjx6-ats.iot.eu-west-3.amazonaws.com"; // Replace with your IoT endpoint
+        //const clientId = `mqtt-client-${uuidv4()}`; // Creates a unique client ID using UUID
         const pubtopicname = "MAMDOUH";
         const subtopicname = "MAMDOUH2"; // Topic to subscribe to
         const payload = {
@@ -119,7 +137,6 @@ function App() {
             ) : (
               <p>Connecting to AWS IoT...</p>
             )}
-            <h1> {user.username}!</h1>
           </div>
         )}
       </Authenticator>
