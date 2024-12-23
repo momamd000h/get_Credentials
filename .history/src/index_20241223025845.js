@@ -5,24 +5,14 @@ import awsExports from "./aws-exports"; // Auto-generated file by Amplify
 import App from "./App";
 import "./index.css";
 import Pubsub from "./pubsub";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Authenticator } from "@aws-amplify/ui-react";
-import reportWebVitals from "./reportWebVitals";
-import "@aws-amplify/ui-react/styles.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Import routing components
 
 Amplify.configure(awsExports); // Configure Amplify with your backend
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Authenticator>
-      <Router>
-        <Routes>
-          <Route path="/" element={<App />} />
-          <Route path="/pubsub" element={<Pubsub />} />
-        </Routes>
-      </Router>
-    </Authenticator>
+    <Route path="/" element={<App />} />
+    <Route path="/pubsub" element={<Pubsub />} />
   </React.StrictMode>
 );
-reportWebVitals();

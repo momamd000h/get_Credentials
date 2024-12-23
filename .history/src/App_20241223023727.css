@@ -8,23 +8,24 @@
 /**************************/
 /* Navbar Styles */
 .header {
-  display: flex; /* Use flexbox for alignment */
-  justify-content: center; /* Center the logo and heading */
-  align-items: center; /* Center items vertically */
-  margin: 20px; /* Add padding around the header */
-  position: fixed; /* Fix the navbar to the top */
-  top: 0; /* Position it at the top */
-  left: 0; /* Align it to the left */
-  right: 0; /* Align it to the right */
-  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
 }
 
 .logo {
   margin-right: 20px;
-  height: 70px; /* Set your desired height */
-  width: auto; /* Maintain aspect ratio */
-  animation: rotate 5s linear infinite; /* Rotate continuously */
+  height: 70px;
+  width: auto;
+  animation: rotate 5s linear infinite;
 }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -35,30 +36,30 @@
 }
 
 .signout {
-  margin-left: auto; /* Push to the right */
+  margin-left: auto;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Align items in the center horizontally */
-  gap: 10px; /* Add spacing between email and button */
-  padding: 10px; /* Add padding for better spacing around content */
-  background-color: #f5f5f5; /* Optional: Light background color */
-  border-radius: 8px; /* Optional: Rounded corners for a smoother look */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .signout button {
-  padding: 10px 20px; /* Add padding to button */
-  border: none; /* Remove default border */
-  border-radius: 5px; /* Rounded button corners */
-  background-color: #007bff; /* Button background color */
-  color: white; /* Button text color */
-  font-size: 14px; /* Button text size */
-  cursor: pointer; /* Change cursor on hover */
-  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 .signout button:hover {
-  background-color: #0056b3; /* Darker background color on hover */
+  background-color: #0056b3;
 }
 
 .email {
@@ -75,7 +76,7 @@
 }
 
 .learn-by-doing h1 {
-  font-size: 2.5rem; /* Emphasize the heading */
+  font-size: 2.5rem;
   color: #000;
   margin-bottom: 15px;
 }
@@ -83,13 +84,13 @@
 .learn-by-doing p {
   color: #34495e;
   margin-bottom: 30px;
-  font-size: 1.2rem; /* Ensure readability */
+  font-size: 1.2rem;
 }
 
 .activities {
   display: flex;
-  justify-content: center; /* Center the entire row of activities */
-  gap: 20px; /* Space between each activity */
+  justify-content: center;
+  gap: 20px;
 }
 
 .activity {
@@ -97,12 +98,12 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   padding: 20px;
-  width: 300px; /* Ensure all activity boxes have the same width */
+  width: 300px;
   text-align: left;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column; /* Stack content vertically */
-  justify-content: space-between; /* Align content inside activity evenly */
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .activity h3 {
@@ -118,8 +119,8 @@
 
 .activity .btn {
   display: inline-block;
-  width: 100%; /* Make the button take up the full width of the container */
-  padding: 10px 0; /* Adjust padding for better appearance */
+  width: 100%;
+  padding: 10px 0;
   background-color: #4777b5;
   color: white;
   text-decoration: none;
@@ -127,7 +128,7 @@
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: auto; /* Push button to the bottom of the activity box */
+  margin-top: auto;
 }
 
 .activity .btn:hover {
@@ -140,8 +141,8 @@
   background-color: #4777b5;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  outline: none; /* Removes the focus outline */
-  border: none; /* Ensures no border is visible */
+  outline: none;
+  border: none;
 }
 
 .btn:hover {
@@ -151,11 +152,11 @@
 /*********************************************/
 /* Footer Styles */
 .footer {
-  background-color: #ffffff; /* Dark background color */
-  color: #190303; /* White text */
+  background-color: #ffffff;
+  color: #190303;
   padding: 20px;
   text-align: center;
-  margin-top: 40px; /* Space above the footer */
+  margin-top: 40px;
 }
 
 .footer-content {
@@ -166,62 +167,60 @@
 .footer-links {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between links */
+  gap: 15px;
   margin-bottom: 15px;
 }
 
 .footer-links a {
-  color: #160000; /* White text for links */
-  text-decoration: none; /* No underline */
+  color: #160000;
+  text-decoration: none;
 }
 
 .footer-links a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline;
 }
 
 .social-media {
   display: flex;
   justify-content: center;
-  gap: 15px; /* Space between social media icons */
+  gap: 15px;
   margin-top: 15px;
 }
 
 .social-icon {
-  width: 30px; /* Size of the icons */
-  height: 30px; /* Keep icons square */
-  transition: transform 0.2s ease-in-out; /* Add hover effect */
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
 }
 
 .social-icon:hover {
-  transform: scale(1.2); /* Slightly enlarge on hover */
+  transform: scale(1.2);
 }
 
 /******************/
 /* WhatsApp Contact Us Button */
 .whatsapp-button {
   position: fixed;
-  left: 20px; /* Positioning the button to the left */
-  bottom: 20px; /* Positioning it at the bottom */
-  background-color: #25d366; /* WhatsApp green */
+  left: 20px;
+  bottom: 20px;
+  background-color: #25d366;
   border-radius: 50%;
   padding: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000; /* Ensure it stays on top of other content */
+  z-index: 1000;
 }
 
 .whatsapp-icon {
-  width: 50px; /* Size of the button */
+  width: 50px;
   height: 50px;
   display: block;
-  border-radius: 50%; /* Round the icon */
+  border-radius: 50%;
 }
 
 .whatsapp-button:hover {
-  background-color: #128c7e; /* Darker green when hovering */
+  background-color: #128c7e;
 }
 
-/**************************/
-/* Mobile Styles */
 @media only screen and (max-width: 600px) {
   /* Header Adjustments */
   .header {
@@ -230,24 +229,31 @@
     text-align: center; /* Center-align all elements */
     padding: 10px; /* Reduce padding for compact look */
     margin-top: 0; /* Remove any unnecessary margin */
-    justify-content: center; /* Vertically center the content */
+    justify-content: flex-start; /* Align elements at the top */
+    align-items: center; /* Center-align horizontally */
   }
 
   .logo {
     height: 40px; /* Smaller logo for mobile */
-    margin: 0 auto 10px auto; /* Horizontally center logo and add margin at bottom */
+    margin: 10px 0; /* Ensure logo has margin for spacing */
     display: block; /* Ensure logo is block-level element for centering */
   }
 
   .signout {
-    margin-left: 0; /* Align signout to left */
     align-items: center; /* Center align text and buttons */
     gap: 5px; /* Reduce spacing between elements */
-    font-size: 14px; /* Button text size */
+    padding: 10px; /* Add padding around sign out */
+    background-color: #f5f5f5; /* Optional: Light background color */
+    border-radius: 8px; /* Optional: Rounded corners for a smoother look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for depth */
+    width: 100%; /* Make signout section span the full width */
+    margin-top: 20px; /* Add margin to separate signout from logo */
   }
 
   .email {
     font-size: 0.9rem; /* Smaller font size for mobile */
+    color: #000; /* Set email color */
+    margin-top: 5px; /* Add margin between email and sign out button */
   }
 
   /* Learn By Doing Section */

@@ -1,0 +1,291 @@
+/**************************/
+/* Global Root Styling */
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/**************************/
+/* Navbar Styles */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.logo {
+  margin-right: 20px;
+  height: 70px;
+  width: auto;
+  animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.signout {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.signout button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signout button:hover {
+  background-color: #0056b3;
+}
+
+.email {
+  font-size: medium;
+  color: #000000;
+  background-color: #ffffff00;
+}
+
+/* Learn by Doing Section */
+.learn-by-doing {
+  background-color: #ffffff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.learn-by-doing h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.learn-by-doing p {
+  color: #34495e;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+.activities {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.activity {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.activity h3 {
+  font-size: 1.5rem;
+  color: #060a23;
+  margin-bottom: 10px;
+}
+
+.activity p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.activity .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+  background-color: #4777b5;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.activity .btn:hover {
+  background-color: #000000;
+}
+
+/**************************/
+/* Button Styles */
+.btn {
+  background-color: #4777b5;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  outline: none;
+  border: none;
+}
+
+.btn:hover {
+  background-color: #000000;
+}
+
+/*********************************************/
+/* Footer Styles */
+.footer {
+  background-color: #ffffff;
+  color: #190303;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: #160000;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-icon {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/******************/
+/* WhatsApp Contact Us Button */
+.whatsapp-button {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.whatsapp-icon {
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+}
+
+.whatsapp-button:hover {
+  background-color: #128c7e;
+}
+
+@media only screen and (max-width: 600px) {
+  /* Header Adjustments */
+  .header {
+    position: relative;
+    flex-direction: column; /* Stack elements vertically */
+    padding: 10px;
+    margin-top: 0;
+    justify-content: flex-start; /* Align items to the top */
+  }
+
+  .logo {
+    height: 40px; /* Smaller logo */
+    margin-top: 10px; /* Add margin for spacing */
+    margin-bottom: 10px; /* Space below the logo */
+    margin: 0 auto 10px auto; /* Horizontally center logo and add margin at bottom */
+  }
+
+  .signout {
+    margin-left: 0;
+    margin-bottom: 15px; /* Add margin between signout and logo */
+    align-items: center;
+    gap: 5px;
+  }
+  .signout button {
+    font-size: 14px;
+  }
+  .email {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  /* Learn By Doing Section */
+  .learn-by-doing h1 {
+    font-size: 1.8rem; /* Adjust heading size */
+  }
+
+  .learn-by-doing p {
+    font-size: 1rem; /* Adjust paragraph size */
+  }
+
+  /* Activities Section */
+  .activities {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .activity {
+    width: 90%;
+    margin: 0 auto; /* Center the activity items */
+  }
+
+  /* Button Adjustments */
+  .btn {
+    width: 90%;
+    font-size: 0.9rem;
+    margin: 10px auto;
+  }
+
+  .whatsapp-button {
+    left: 5px;
+    bottom: 10px;
+    padding: 5px;
+  }
+
+  .whatsapp-icon {
+    width: 25px;
+    height: 25px;
+  }
+}

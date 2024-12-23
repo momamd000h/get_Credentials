@@ -243,7 +243,7 @@
     margin-left: 0; /* Align signout to left */
     align-items: center; /* Center align text and buttons */
     gap: 5px; /* Reduce spacing between elements */
-    font-size: 14px; /* Button text size */
+    font-size: 0.5rem; /* Button text size */
   }
 
   .email {

@@ -18,7 +18,7 @@ root.render(
     <Authenticator>
       <Router>
         <Routes>
-          <Route path="/" element={<App />} />
+          <App />
           <Route path="/pubsub" element={<Pubsub />} />
         </Routes>
       </Router>

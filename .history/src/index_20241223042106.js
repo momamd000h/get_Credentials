@@ -8,7 +8,7 @@ import Pubsub from "./pubsub";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Authenticator } from "@aws-amplify/ui-react";
 import reportWebVitals from "./reportWebVitals";
-import "@aws-amplify/ui-react/styles.css";
+import ReactDOM from "react-dom/client";
 
 Amplify.configure(awsExports); // Configure Amplify with your backend
 

@@ -243,7 +243,7 @@
     margin-left: 0; /* Align signout to left */
     align-items: center; /* Center align text and buttons */
     gap: 5px; /* Reduce spacing between elements */
-    font-size: 14px; /* Button text size */
+    font-size: 7px; /* Button text size */
   }
 
   .email {
@@ -273,7 +273,7 @@
   /* Button Adjustments */
   .btn {
     width: 90%; /* Reduce button width for mobile */
-    font-size: 0.9rem; /* Adjust font size for mobile */
+    font-size: 0.8rem; /* Adjust font size for mobile */
     margin: 10px auto; /* Center buttons */
   }
 
