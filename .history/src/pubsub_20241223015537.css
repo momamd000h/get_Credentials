@@ -1,0 +1,116 @@
+/* General container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Retained message box */
+.retained-message-box {
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.retained-message-box h3 {
+  color: #4caf50;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.retained-message-box p {
+  color: #555;
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* PID input container */
+.pid-container {
+  margin-bottom: 20px;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pid-input {
+  margin-bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.pid-input label {
+  color: #333;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.pid-input input {
+  padding: 12px;
+  width: 60%;
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.pid-input input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+/* Publish button styling */
+.publish-button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}
+
+/* Button disabled state */
+.publish-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .pid-input input {
+    width: 80%;
+  }
+
+  .publish-button {
+    width: 80%;
+  }
+}

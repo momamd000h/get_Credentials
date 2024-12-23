@@ -1,0 +1,89 @@
+/* General container styling */
+.container {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styling */
+h1 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Retained message box styling */
+.retained-message-box {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.retained-message-box h3 {
+  font-size: 20px;
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+.retained-message-box p {
+  font-size: 16px;
+  color: #333;
+}
+
+/* PID input styling */
+.pid-input {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pid-input label {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.pid-input input {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.pid-input input:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+/* Publish button styling */
+.publish-button {
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}
+
+.publish-button:active {
+  background-color: #388e3c;
+}

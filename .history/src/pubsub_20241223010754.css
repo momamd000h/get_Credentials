@@ -1,0 +1,71 @@
+/* General container styling */
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Section header styling */
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* PID controls styling */
+.pid-controls {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.pid-controls h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.pid-controls label {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.pid-controls input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+/* Publish button */
+.publish-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.publish-button:hover {
+  background-color: #0056b3;
+}
+
+/* Success message styling */
+.success-message {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: green;
+}

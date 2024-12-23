@@ -1,0 +1,101 @@
+/* pubsub.css */
+
+/* Basic styling for the container */
+.container {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading for the message */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for the retained message box */
+.retained-message-box {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.retained-message-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.retained-message-box p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
+
+/* Style for the PID containers */
+.pid-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+/* Input field styling */
+.pid-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.pid-input label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.pid-input input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.pid-input input:focus {
+  border-color: #007bff;
+}
+
+/* Style for the publish button */
+.publish-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.publish-button:hover {
+  background-color: #0056b3;
+}
+
+.publish-button:active {
+  background-color: #00408b;
+}

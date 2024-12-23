@@ -1,0 +1,104 @@
+/* General container styling */
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Application content styling */
+.app-content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Text area for message input */
+.message-input {
+  width: 100%;
+  height: 80px;
+  margin: 15px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+}
+
+/* Buttons */
+.publish-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 10px 0;
+}
+
+.publish-button:hover {
+  background-color: #0056b3;
+}
+
+/* Retained message box styling */
+.retained-message-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.retained-message-box h3 {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.retained-message-box p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* PID controls styling */
+.pid-controls {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.pid-controls h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.pid-controls label {
+  display: block;
+  font-size: 1rem;
+  margin: 5px 0;
+  color: #555;
+}
+
+.pid-controls input {
+  width: calc(100% - 10px);
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}

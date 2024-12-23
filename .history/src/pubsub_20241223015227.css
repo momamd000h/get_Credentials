@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.retained-message-box {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 80%;
+  text-align: center;
+}
+
+.pid-container {
+  margin-bottom: 20px;
+  width: 80%;
+  text-align: center;
+}
+
+.pid-input {
+  margin-bottom: 10px;
+}
+
+.pid-input input {
+  padding: 8px;
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+}
+
+.publish-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.publish-button:hover {
+  background-color: #45a049;
+}

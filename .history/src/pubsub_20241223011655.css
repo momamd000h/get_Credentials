@@ -1,0 +1,61 @@
+/* General container styling */
+.container {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pid-controls {
+  margin: 20px 0;
+  text-align: left;
+}
+
+.pid-controls label {
+  display: block;
+  font-size: 1rem;
+  margin: 10px 0 5px;
+  color: #555;
+}
+
+.pid-controls input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.publish-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.publish-button:hover {
+  background-color: #0056b3;
+}
+
+.retained-message-box {
+  margin-top: 20px;
+  background-color: #f1f1f1;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

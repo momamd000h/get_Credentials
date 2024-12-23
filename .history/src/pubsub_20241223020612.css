@@ -1,0 +1,128 @@
+/* pubsub.css */
+
+/* Overall container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 40px;
+  background: linear-gradient(145deg, #6e7bff, #4b54f1);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 60px auto;
+  color: white;
+}
+
+/* Heading styles */
+h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Retained message box */
+.retained-message-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.retained-message-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.retained-message-box p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* PID input container */
+.pid-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+/* Individual input styling */
+.pid-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.pid-input label {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #f4f4f4;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.pid-input input {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.pid-input input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.pid-input input:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: 2px solid #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.5);
+}
+
+/* Publish button styles */
+.publish-button {
+  padding: 18px 35px;
+  background: linear-gradient(145deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.publish-button:hover {
+  background: linear-gradient(145deg, #2980b9, #3498db);
+  transform: translateY(-4px);
+}
+
+.publish-button:active {
+  transform: translateY(2px);
+}
+
+.publish-button:focus {
+  outline: none;
+}

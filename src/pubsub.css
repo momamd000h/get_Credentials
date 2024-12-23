@@ -1,0 +1,140 @@
+/* General container styles */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px; /* Reduced padding for a more compact layout */
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 60vh; /* Reduced container height for a shorter layout */
+  max-width: 600px; /* Optional: Limit the width for better control */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+/* Heading styles */
+h1 {
+  color: #333;
+  margin-bottom: 10px; /* Reduced margin */
+  font-size: 1.6rem; /* Smaller font size */
+  text-align: center;
+}
+
+/* Retained message box */
+.retained-message-box {
+  margin-bottom: 15px; /* Reduced bottom margin */
+  padding: 10px; /* Reduced padding */
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 90%;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 120px; /* Shortened height */
+  overflow-y: auto; /* Allow scrolling if the content exceeds the height */
+}
+
+.retained-message-box h3 {
+  color: #4777b5;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+
+.retained-message-box p {
+  color: #555;
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.3; /* Added line-height for better readability */
+}
+
+/* PID input container */
+.pid-container {
+  margin-bottom: 8px; /* Reduced margin */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pid-input {
+  margin-bottom: 5px; /* Reduced margin */
+  width: 100%;
+  text-align: center;
+}
+
+.pid-input label {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.pid-input input {
+  padding: 8px; /* Reduced padding */
+  width: 80%; /* Increased input width */
+  font-size: 1rem;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.pid-input input:focus {
+  border-color: #4777b5;
+  outline: none;
+}
+
+/* Publish button styling */
+.publish-button {
+  padding: 10px 20px; /* Reduced padding */
+  font-size: 1rem;
+  background-color: #4777b5;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 50%;
+}
+
+.publish-button:hover {
+  background-color: #17264f;
+}
+
+/* Button disabled state */
+.publish-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    min-height: 70vh; /* Further shorten the container on mobile */
+  }
+
+  .pid-input input {
+    width: 90%; /* Expanded width for easier typing */
+  }
+
+  .publish-button {
+    width: 90%; /* Expanded button width */
+    font-size: 1.1rem; /* Adjusted font size */
+    padding: 12px 0; /* Adjusted padding */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Slightly smaller heading on mobile */
+  }
+
+  .retained-message-box h3 {
+    font-size: 1.1rem; /* Slightly larger heading for message box */
+  }
+
+  .retained-message-box p {
+    font-size: 1rem; /* Increased font size for readability */
+  }
+}
