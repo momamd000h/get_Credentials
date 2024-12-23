@@ -12,7 +12,6 @@ import "@aws-amplify/ui-react/styles.css";
 import Privacy from "./Privacy";
 import TermsOfService from "./TermsOfService";
 import Queue from "./Queue";
-import Interactive from "./Interactive";
 
 Amplify.configure(awsExports); // Configure Amplify with your backend
 
@@ -27,7 +26,6 @@ root.render(
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/TermsOfService" element={<TermsOfService />} />
           <Route path="/Queue" element={<Queue />} />
-          <Route path="/Interactive" element={<Interactive />} />
         </Routes>
       </Router>
     </Authenticator>

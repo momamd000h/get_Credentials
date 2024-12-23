@@ -12,7 +12,6 @@ import "@aws-amplify/ui-react/styles.css";
 import Privacy from "./Privacy";
 import TermsOfService from "./TermsOfService";
 import Queue from "./Queue";
-import Interactive from "./Interactive";
 
 Amplify.configure(awsExports); // Configure Amplify with your backend
 
