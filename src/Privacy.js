@@ -1,7 +1,7 @@
 import React from "react";
 import "./Privacy.css"; // Assuming you have a CSS file for styling
 
-const PrivacyPolicy: React.FC = () => {
+const PrivacyPolicy = () => {
   return (
     <div className="privacy-container">
       <header>

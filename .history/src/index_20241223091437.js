@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Authenticator } from "@aws-amplify/ui-react";
 import reportWebVitals from "./reportWebVitals";
 import "@aws-amplify/ui-react/styles.css";
-import Privacy from "./Privacy";
+import Privacy from "./privacy";
 import TermsOfService from "./TermsOfService";
 
 Amplify.configure(awsExports); // Configure Amplify with your backend

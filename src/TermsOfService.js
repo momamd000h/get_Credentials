@@ -1,7 +1,7 @@
 import React from "react";
 import "./TermsOfService.css"; // Assuming you have a CSS file for styling
 
-const TermsOfService: React.FC = () => {
+const TermsOfService = () => {
   return (
     <div className="terms-container">
       <header>
